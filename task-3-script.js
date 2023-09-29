@@ -4,7 +4,6 @@ function multiply(){
     num1 = parseInt(num1);
     num2 = parseInt(num2);
     let result = num1 * num2;
-    // alert("The result is "+result);
     document.querySelector(".result").innerHTML = "The Result Is:<br>"+result;
 }
 function divide(){
@@ -13,6 +12,5 @@ function divide(){
     num1 = parseInt(num1);
     num2 = parseInt(num2);
     let result = num1 / num2;
-    // alert("The result is "+result);
     document.querySelector(".result").innerHTML = "The Result Is:<br>"+result;
 }
