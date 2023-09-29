@@ -11,7 +11,6 @@ document.querySelector("button").addEventListener("click", function () {
 
     if(!document.querySelector("#email").value.match(validRegex)){
         flag=1;
-        // document.querySelector("#email").value="";
         document.querySelector("#email").style.borderColor = "red";
         document.querySelector("#email").style.borderWidth = "3px";
         document.querySelector(".email-invalid").innerHTML = "A valid email address is required";
@@ -38,7 +37,6 @@ document.querySelector("button").addEventListener("click", function () {
     }
     else if(!isValidUrl(document.querySelector("#website").value)){
         flag=1;
-        // document.querySelector("#url").value="";
         document.querySelector("#website").style.borderColor = "red";
         document.querySelector("#website").style.borderWidth = "3px";
         document.querySelector(".url-invalid").innerHTML = "A valid url is required";
@@ -54,7 +52,6 @@ document.querySelector("button").addEventListener("click", function () {
     }
 
     if(flag==0){
-        // return false;
         window.location.href = document.querySelector("#website").value;
     }
     
